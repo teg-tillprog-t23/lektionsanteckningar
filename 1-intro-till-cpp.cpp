@@ -26,7 +26,7 @@ int main(){ // vi behöver i början bestämma vilken typ funktionen ska returne
 } // Vi använder ; och {}, indenteringen spelar ingen roll, utan används endast för att det blir mer lättläst
 
 
-// För att skriva ut text kan vi använda printf()
+// För att skriva ut text kan vi använda printf() (cout, men vi använder c-varianten för att det är mer likt det vi ska göra senare)
 // Vi behöver då inkludera ett bibliotek #include <iostream>;
 
 // Datatyper: int, double, string, bool

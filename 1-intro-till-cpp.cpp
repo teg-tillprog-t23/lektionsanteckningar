@@ -43,7 +43,7 @@ int main(){ // vi behöver i början bestämma vilken typ funktionen ska returne
   printf("Här är talet: %d \n";
 }*/
 
-/* %d för tal, %x för hexadecimala tal, %s för string*/
+/* %d för helttal, %f för decimaltal, %s för string*/
 
 // listor = arrays
 /* string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};

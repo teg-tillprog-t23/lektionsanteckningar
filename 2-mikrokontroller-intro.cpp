@@ -64,4 +64,10 @@ Ta reda på: vad betyder Serial.begin(115200);?
 
 // delay
 
+//loop() körs om och om igen "av sig själv". Det är inte en oändlig loop som vi är vana att konstruera den. 
+//Vi behöver globala variabler för att hålla states mellan varven.
+
+// I ett större projekt så försöker man ändå modularisera - men i mindre projekt och med begränsade resurser så är det ett pragmatiskt tillvägagångssätt.
+
+
 // Dokumentation för c++ för mikrokontrollers (arduino)

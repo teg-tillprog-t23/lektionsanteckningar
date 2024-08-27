@@ -63,3 +63,5 @@ Ta reda på: vad betyder Serial.begin(115200);?
 /* använder vi mest för att debugga */
 
 // delay
+
+// Dokumentation för c++ för mikrokontrollers (arduino)

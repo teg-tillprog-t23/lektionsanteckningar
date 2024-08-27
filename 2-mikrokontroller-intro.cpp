@@ -54,3 +54,12 @@ En anpassad typ av kod, med C++ -syntax
 Ta reda på: vad betyder Serial.begin(115200);?
 
 */
+
+// Serial: en pinne som går mellan 0/1
+
+// Serial.begin: sätter hastigheten
+
+// Serial.print
+/* använder vi mest för att debugga */
+
+// delay

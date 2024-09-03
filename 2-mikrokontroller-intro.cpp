@@ -1,11 +1,16 @@
 // Vad är ESP32?
 
+
 /* ESP32 är en mikrokontroller. 
 
-En mikrokontroller är en liten dator på ett chip som kan programmeras för att utföra specifika uppgifter. 
-Den innehåller en processor, minne och in- och utgångar för att interagera med andra komponenter som sensorer, motorer eller displayer. 
-Mikrokontrollers används för att styra och automatisera enkla elektroniska system.
-De är mycket energieffektiva och används ofta i inbäddade system där de arbetar självständigt utan behov av en större dator. 
+En mikrokontroller är en liten dator på ett chip som kan programmeras för 
+att utföra specifika uppgifter. 
+Den innehåller en processor, minne och in- och utgångar för att interagera 
+med andra komponenter som sensorer, motorer eller displayer. 
+Mikrokontrollers används för att styra och automatisera enkla elektroniska 
+system.
+De är mycket energieffektiva och används ofta i inbäddade system där de 
+arbetar självständigt utan behov av en större dator. 
 
 */
 
@@ -64,7 +69,8 @@ Ta reda på: vad betyder Serial.begin(115200);?
 
 // delay
 
-//loop() körs om och om igen "av sig själv". Det är inte en oändlig loop som vi är vana att konstruera den. 
+//loop() körs om och om igen "av sig själv". 
+// Det är inte en oändlig loop som vi är vana att konstruera den. 
 //Vi behöver globala variabler för att hålla states mellan varven.
 
 // I ett större projekt så försöker man ändå modularisera - men i mindre projekt och med begränsade resurser så är det ett pragmatiskt tillvägagångssätt.

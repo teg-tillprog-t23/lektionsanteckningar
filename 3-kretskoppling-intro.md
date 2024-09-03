@@ -16,4 +16,8 @@ Vi har enkla LED-lampor som vi kommer att använda oss av i början. De är röd
 
 En resistor är en komponent som tillför ett motstånd i en elektrisk krets. Resistorer kan ha olika stora motstånd, och de gör att strömmen minskar i en krets så länge spänningen är konstant. Spänningen mäts i Volt (V). Strömmen i Ampere (A) och resistansen i ohm ($\Omega$). Vi behöver ha med en resistor i kretsen för att LED:en inte klarar av en för stor ström.
 
-Vi kan avgöra hur många ohm en resistor är, det vill säga hur starkt motståndet är, genom att titta på färgkodningen. Ni kan använda er av följande [diagram]() för att avgöra resistansen. Vi övar tillsammans på att hitta resistansen för några olika resistorer.
+Vi kan avgöra hur många ohm en resistor är, det vill säga hur starkt motståndet är, genom att titta på färgkodningen. Ni kan använda er av följande [diagram](https://drive.google.com/file/d/1JZhu2TDsmYKSEjUwbutuufWjmNZ0FIKH/view?usp=sharing) för att avgöra resistansen. Vi övar tillsammans på att hitta resistansen för några olika resistorer.
+
+## Välja resistor
+
+

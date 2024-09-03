@@ -19,5 +19,6 @@ En resistor är en komponent som tillför ett motstånd i en elektrisk krets. Re
 Vi kan avgöra hur många ohm en resistor är, det vill säga hur starkt motståndet är, genom att titta på färgkodningen. Ni kan använda er av följande [diagram](https://drive.google.com/file/d/1JZhu2TDsmYKSEjUwbutuufWjmNZ0FIKH/view?usp=sharing) för att avgöra resistansen. Vi övar tillsammans på att hitta resistansen för några olika resistorer.
 
 ## Välja resistor
+Vilken resistor vi väljer beror lite på vilken LED vi använder, och vilken spänning vi har från strömkällan. Vi har ju använt 
 
 

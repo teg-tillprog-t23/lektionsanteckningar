@@ -29,5 +29,5 @@ Om vi till exempel har en röd LED så har vi ett spänningsfall på 2-2,2 V. Vi
 
 
 ## Pins
-Olika pinnar på ESP32 används till olika saker. Vi kommer att gå in på det mer noga sen. Idag behöver ni veta att pinnar ni kan använda till input/output är 2, 3, 11, 12, 14. För att kunna kontrollera LED:en med kod behöver vi koppla den till en pin istället för direkt till strömkällan.
+Olika pinnar på ESP32 används till olika saker. Vilka pinnar ni kan använda till input/output hittar ni i [pin-kartan](https://drive.google.com/file/d/17dw6Q5K3z3ruKLi4Ni3zaGkP_3yOIWBQ/view?usp=drive_link). För att kunna kontrollera LED:en med kod behöver vi koppla den till en pin istället för direkt till strömkällan.
 

@@ -1,0 +1,5 @@
+# Knapp introduktion
+
+## Digital output
+
+Vi har ju tidigare programmerat LED-lampor. Vi har då använt oss av pins på mikrokontrollen för att ge output. Vi har definierat detta i kod, och sedan använt digitalWrite(). Vi har använt digital output, det vill säga den har två lägen. Antingen är den 1 (HIGH) eller 

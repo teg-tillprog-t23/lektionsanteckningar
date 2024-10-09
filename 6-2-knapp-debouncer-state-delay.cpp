@@ -9,7 +9,7 @@ int ledState = HIGH;
 void setup() {
   Serial.begin(115200);
 
-  pinMode(BUTTON_PIN, INPUT);
+  pinMode(BUTTON_PIN, INPUT_PULLUP);
   pinMode(LED_PIN, OUTPUT);
 }
 

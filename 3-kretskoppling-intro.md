@@ -6,7 +6,7 @@ Vi ska nu börja koppla komponenter till ESP32, först i Wokwi, och senare på r
 Vi har ju vår ESP32 med en massa pins och liknande (vi går igenom mer noga senare). För att kunna koppla kretsar med olika komponenter så använder vi något som kallas kopplingsdäck (breadboard). Breadboarden är kopplad på följande sätt:
 [bild på kopplingar i breadboard](https://drive.google.com/file/d/1VpY8Iw3DK0x39SpjXRdX8oZWaAE6hbq-/view?usp=sharing).
 
-Vi har förberett era bradboards så att vi har kopplat strömmen från 3,3V-pinnen till plussidan på breadboarden och GND (ground=jord) till minussidan av breadboarden. Markeringarna med + och - finns för att göra det enklare för oss att koppla kretsarna korrekt. Vi har även kopplat över mellanrummet som finns mellan halvorna av breadboarden så att vi enkelt ska kunna använda hela.
+Vi har förberett era breadboards så att vi har kopplat strömmen från 3,3V-pinnen till plussidan på breadboarden och GND (ground=jord) till minussidan av breadboarden. Markeringarna med + och - finns för att göra det enklare för oss att koppla kretsarna korrekt. Vi har även kopplat över mellanrummet som finns mellan halvorna av breadboarden så att vi enkelt ska kunna använda hela.
 
 ## LED
 

@@ -4,8 +4,8 @@
 
 #include <Arduino.h>
 
-#define LED_PIN = 5 // vilken pin LED:en ska vara
-#define pot_PIN = 3 // vilken pin potentiometern ska vara
+#define LED_PIN 5 // vilken pin LED:en ska vara
+#define pot_PIN 3 // vilken pin potentiometern ska vara
 
 
 const int pwmFrequency = 5000; // Frekvens för PWM, 5000 är ett bra värde. Reglerar hur ofta vi har pulser.

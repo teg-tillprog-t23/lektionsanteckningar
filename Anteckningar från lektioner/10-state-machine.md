@@ -1,0 +1,7 @@
+# State machines (tillståndsmaskin)
+
+En state machine (tillståndsmaskin) är en matematisk modell som kan visa en typ av program. Det går ut på att programmet kan befinna sig i ett ändligt antal tillstånd. Programmet kan sedan byta tillstånd som en reaktion på någon input. En tillståndsmaskin kan illustreras både med diagram och i en tabell. För att kunna visa så ska vi nu ta ett exempel.
+
+Tänk dig att vi har ett program med en LED och en knapp. LED:en är från början släckt. Om man trycker på knappen så tänds LED:en och lyser som vanligt. Om man trycker på knappen igen så börjar LED:en blinka. Om man trycker på knappen igen så släcks LED:en. Programmet har alltså tre olika tillstånd: LED lyser, LED blinkar, LED släckt. Den input som tar oss till ett annat tillstånd är en knapptryckning. För att se detta illustrerat i ett diagram, se [den här bilden](https://drive.google.com/file/d/1g6-bcuKZ-ChGI8AN9H4k3Vl_EJX_LSLa/view?usp=sharing). För att se det illustrerat i en tillståndsövergångstabell, se [den här bilden](https://drive.google.com/file/d/1xsgyJeSz69NPoIlUZZi-hQgVKIZhbQfR/view?usp=sharing).
+
+Att kunna beskriva vad en state machine är och rita diagram och tabeller över enkla state machines ingår i kursen. Tankesättet kommer att användas även i spelprogrammeringen. Att kunna programmera en state machine är på hög nivå.

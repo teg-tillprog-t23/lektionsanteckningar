@@ -32,7 +32,7 @@ void loop() {
         }
     
         if(brightness == 255){ // Om vi har nått högsta ljusstyrka
-        goingUp = false; // Nu ska vi vara påväg ner
+          goingUp = false; // Nu ska vi vara påväg ner
         } 
 
         else if(brightness == 0){ // Om vi har nått lägsta ljusstyrka

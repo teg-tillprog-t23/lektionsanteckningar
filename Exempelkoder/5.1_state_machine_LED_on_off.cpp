@@ -6,7 +6,7 @@
 
 const int BUTTON_PIN = 12; // Vilken pin knappen ska vara på
 const int LED_PIN = 10; // Vilken pin LED:en ska vara på
-const unsigned long DEBOUNCE_DELAY = 50; // Delay för att reglera debounce
+const int DEBOUNCE_DELAY = 50; // Delay för att reglera debounce
 
 enum ButtonState { // Här skapar vi en egen datatyp som heter ButtonState. Den kan anta fyra olika värden.
   UP,
@@ -80,6 +80,7 @@ void loop() {
         digitalWrite(LED_PIN, LOW); // Släck LED:en
         state = LED_OFF; // Ändra tillstånd
       }
+      break;
   }
 }
 

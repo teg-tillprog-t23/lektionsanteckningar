@@ -1,7 +1,7 @@
 
 // Define the LED and potentiometer pins
 const int ledPin = 2;          // Pin for LED 
-const int potPin = 34;         // Pin for Potentiometer (titta på pinkartan för att se vilka du kan använda)
+const int potPin = 4;         // Pin for Potentiometer (titta på pinkartan för att se vilka du kan använda)
 
 // Variables to hold the potentiometer value and the delay
 int potValue = 0;              // Variable to store the raw value from the potentiometer

@@ -1,6 +1,6 @@
 // Define the LED and potentiometer pins
 const int ledPin = 2;          // Pin for LED (e.g., GPIO 2 on ESP32-S2)
-const int potPin = 34;         // Pin for Potentiometer (e.g., GPIO 34 on ESP32-S2)
+const int potPin = 4;         // Pin for Potentiometer (e.g., GPIO 34 on ESP32-S2)
 
 // Variables to hold potentiometer value and delay
 int potValue = 0;              // Variable to store the raw value from the potentiometer

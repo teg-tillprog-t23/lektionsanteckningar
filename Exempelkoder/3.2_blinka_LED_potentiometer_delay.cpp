@@ -7,7 +7,7 @@
 #include <Arduino.h>
 
 const int ledPin = 2;          // vilken pin LED:en är
-const int potPin = 34;         // vilken pin potentiometern är
+const int potPin = 4;         // vilken pin potentiometern är
 
 int potValue = 0;              // variabel för värdet som läses från potentiometern
 int blinkDelay = 0;            // hur länge vi ska vänta mellan blinkningar

@@ -36,7 +36,7 @@ while running:
 
     pygame.display.flip() # uppdaterar skärmen med det vi har ändrat
 
-    dt = clock.tick(60) / 1000 # håller koll på delta time som beror av FPS
+    dt = clock.tick(60) / 1000  # håller koll på delta time som beror av FPS
     # clock.tick() ger millisekunder
 
 pygame.quit()

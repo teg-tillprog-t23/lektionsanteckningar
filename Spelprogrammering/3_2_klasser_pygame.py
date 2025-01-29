@@ -18,6 +18,8 @@ class Player:
             self.x -= 30  # ändrar x-värdet så att cirkeln flyttas åt vänster
         if keys[pygame.K_d]: # om d är nedtryckt
             self.x += 30  #
+
+    def draw(self):
         
         pygame.draw.circle(self.screen, self.color, (self.x, self.y), self.radius)
 
@@ -36,6 +38,7 @@ while running:
 
     keys = pygame.key.get_pressed() # tar in vilka tangenter som är nedtryckta
     player_1.update(keys)
+    player_1.draw()
     
     pygame.display.flip() # uppdaterar skärmen med det vi har ändrat
 

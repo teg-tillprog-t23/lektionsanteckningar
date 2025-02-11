@@ -1,6 +1,7 @@
 
 import pygame # Vi startar ALLTID med att importera bibliotek, tex pygame, random, math
 import random
+import math
 
 # Här har vi basvariabler, det är okej att de är globala
 # Här har vi med skärmens bredd, höjd och FPS
@@ -11,21 +12,38 @@ FPS = 60
 # Efter det kommer klasser, vi kan ha fler olika klasser om vi har fler olika typer av objekt
 class Player:
     # klassen ska starta med en konstruktor, en __init__ metod
+    """I DENNA METOD FINNS EN DEL AV DET SOM ÄR NYTT"""
     def __init__(self, x=100, y=100):
         self.x = x
         self.y = y
+        self.dx = 0 # sätter hur x ska ändras
+        self.dy = 0 # sätter hur y ska ändras
         self.size = 20
+        self.speed = 5 # avgör hastigheten som spelaren rör sig
 
     # Efter konstruktorn kommer en update-metod som uppdaterar objektets position
+        """I DENNA METOD FINNS EN DEL AV DET SOM ÄR NYTT"""
     def update(self, keys):
+        self.dx = 0 # nollställer dx så att spelaren inte rör sig om inga knappar trycks ner
+        self.dy = 0 # nollställer dy så att spelaren inte rör sig om  inga knappar trycks ner
+
         if keys[pygame.K_LEFT]:
-            self.x -= 2
+            self.dx = -1
         if keys[pygame.K_RIGHT]:
-            self.x += 2
+            self.dx = 1
         if keys[pygame.K_UP]:
-            self.y -= 2
+            self.dy = -1
         if keys[pygame.K_DOWN]:
-            self.y += 2
+            self.dy = 1
+        
+        if self.dx != 0 or self.dy != 0: # om spelaren rör sig (annars skulle det bli division med 0)
+            length = math.sqrt((self.dx)**2 + (self.dy)**2) # beräkna längden på vektorn som bildas med rörelsen
+            self.dx = self.dx/length # ser till att längden blir 1 oavsett om vi rör oss diagonalt eller inte
+            self.dy = self.dy/length # samma som raden ovan fast för y
+        
+        self.x += self.dx * self.speed # ändrar spelarens position i x-led enligt hastighet och riktning
+        self.y += self.dy * self.speed # ändrar spelarens position i y-led enligt hastighet och riktning
+
 
     # Därefter har vi en metod som ritar upp objektet
     def draw(self, screen): # metoden tar in vilken skärrm objektet ska ritas på

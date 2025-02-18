@@ -3,6 +3,9 @@ import pygame # Vi startar ALLTID med att importera bibliotek, tex pygame, rando
 import random
 import math
 
+"""HÄR ÄR DET NYTT"""
+import time # importerar time för att kunna räkna med tid (tänk millis)
+
 # Här har vi basvariabler, det är okej att de är globala
 # Här har vi med skärmens bredd, höjd och FPS
 WIDTH = 800
@@ -47,7 +50,6 @@ class Player:
     def draw(self, screen): # metoden tar in vilken skärrm objektet ska ritas på
         pygame.draw.circle(screen, "yellow", (self.x, self.y), self.size)
 
-    """HÄR FINNS DET NYTT"""
     def get_rect(self): # Metoden get_rect returnerar en hitbox för spelaren som används för att avgöra om den har krockat i något
         # Rect(left, top, width, height)
         # left blir x (centerpunkten) minus storleken (radien), samma för top eftersom att en rektangel utgår från högsta vänstra hörnet
@@ -56,7 +58,6 @@ class Player:
         
     # Efter det kan vi ha andra metoder, till exempel en metod som heter destruct som "förstör" objektet
 
-""" I KLASSEN CANDY FINNS DET NYTT """
 class Candy:
     def __init__(self, color):
         self.size = 10
@@ -77,6 +78,11 @@ class Candy:
 
     def get_rect(self): # Samma som i player, ger en hitbox för godisen
         return pygame.Rect(self.x-self.size, self.y-self.size, self.size*2, self.size*2)
+    
+    """HÄR  ÄR DET NYTT"""
+    def change_position(self): # Används för att byta position på godisen
+        self.x = random.randint(0+self.size, WIDTH-self.size) # väljer ett nytt random x-värde för positionen
+        self.y = random.randint(0+self.size, HEIGHT-self.size) # väljer ett nytt random y-värde för positionen
 
 
 # Efter klasserna har vi funktioner, vi kan ha fler funktioner än main om vi vill
@@ -85,8 +91,13 @@ class Candy:
 def main():
     # Det första som händer i vårt spel är en "setup" alltså ett antal saker som görs för att förbereda för uppstart
     pygame.init() # Det första är att initiera moduler i pygame
-    screen = pygame.display.set_mode((WIDTH,HEIGHT), vsync=1) # Sedan definieras vår skärm som spelet ska ritas på
+
+    """HÄR ÄR DET NYTT"""
+    screen = pygame.display.set_mode((WIDTH,HEIGHT), flags=pygame.SCALED, vsync=1) # Sedan definieras vår skärm som spelet ska ritas på
     clock = pygame.time.Clock() # Och sen sätter vi upp vår klocka som hjälper oss att hålla tiden
+
+    """HÄR ÄR DET NYTT"""
+    last_updated_position = time.time() # senaste tiden som godisarna uppdaterade sin position
 
     #Vi skapar även de objekt som behöver skapas
     player = Player()
@@ -109,8 +120,14 @@ def main():
         # Sedan uppdatera spelvärlden med alla objekt
         keys = pygame.key.get_pressed()
         player.update(keys)
+
+        """HÄR ÄR DET NYTT"""
+        current_time = time.time() # tar nuvarande tid i loopen
+        if  current_time - last_updated_position >= 3: # om det har gått tre sekunder sedan positionen senast ändrades
+            last_updated_position = current_time # uppdatera senast ändrad
+            for candy in candy_list: # för varje godis
+                candy.change_position() # ändra positionen
         
-        """ HÄR ÄR DET NYTT """
         # Efter det finns plats för att hantera kollissioner
 
         for candy in candy_list: # För varje godis som finns

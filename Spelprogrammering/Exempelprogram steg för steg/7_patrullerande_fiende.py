@@ -188,6 +188,7 @@ def main():
         # Sedan ritar vi ut spelvärlden
         screen.fill("black")
         player.draw(screen)
+        """HÄR ÄR DET NYTT"""
         enemy.draw(screen)
         for object in candy_list:
             object.draw(screen)

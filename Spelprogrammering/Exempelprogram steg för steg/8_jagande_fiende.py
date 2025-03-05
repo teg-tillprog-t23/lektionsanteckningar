@@ -64,7 +64,7 @@ class Player:
 """ HÄR ÄR DET NYTT"""
 class Enemy:
     # klassen ska starta med en konstruktor, en __init__ metod
-    def __init__(self, x=10, y=200):
+    def __init__(self, x=10, y=300):
         self.x = x
         self.y = y
         """HÄR ÄR DET NYTT"""

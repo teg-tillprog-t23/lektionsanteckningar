@@ -611,13 +611,6 @@ b.) Hur kan klasser hjälpa till att organisera spelets kod?
 
 ---
 
-### Uppgift: Varför använda vektorer istället för enkel geometri?
-
-a.) Vad är skillnaden mellan att räkna rörelser med `x, y`-koordinater och att använda `pygame.Vector2()`?
-
-b.) Nämn en situation där vektorer gör det enklare att implementera spelrörelse.
-
----
 
 ### Uppgift: Hur fungerar kollisionshantering i Pygame?
 

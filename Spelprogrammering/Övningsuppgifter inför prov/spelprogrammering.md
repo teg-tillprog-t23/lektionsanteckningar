@@ -10,10 +10,6 @@ när du löser en uppgift.
 Det är också smidigt att ha en enkla klasser `Player` och `Candy`
 tillgängliga. Gör det till en övning att skriva dem.
 
---- 
-
-### Uppgift 1: Initialisering
-a.) Vad händer om vi glömmer att anropa `pygame.init()` i ett Pygame-program?  
 
 --- 
 

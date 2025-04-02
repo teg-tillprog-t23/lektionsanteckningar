@@ -16,8 +16,8 @@ class Candy(pygame.sprite.Sprite): # godisklassen ärver av klassen Sprite från
 
     """HÄR ÄR DET NYTT"""
     def change_position(self, width, height): # en metod som flyttas godisen till en random plats
-        self.x = random.randint(0+self.size[0], width-self.size[0]) # väljer ett nytt random x-värde för positionen
-        self.y = random.randint(0+self.size[1], height-self.size[1]) # väljer ett nytt random y-värde för positionen
+        self.x = random.randint(0, width-self.size[0]) # väljer ett nytt random x-värde för positionen
+        self.y = random.randint(0, height-self.size[1]) # väljer ett nytt random y-värde för positionen
 
         self.rect.topleft = (self.x, self.y) # uppdaterar positionen för hitboxen också
 

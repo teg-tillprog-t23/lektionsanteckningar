@@ -20,7 +20,7 @@ class Player(pygame.sprite.Sprite): # spelarklassen ärver av klassen Sprite fr�
         self.img_left = image.subsurface((0,0,64,64)) # den del som går åt vänster
         self.img_up = image.subsurface((64,0,64,64)) # den del som går åt höger
         self.img_down = image.subsurface((128,0,64,64)) # den del som går nedåt
-        self.img_right = image.subsurface((196,0,64,64)) # den del som går uppåt
+        self.img_right = image.subsurface((192,0,64,64)) # den del som går uppåt
         
         # Välj valfri bild att starta med för att initialisera attributet
         self.image = self.img_up
